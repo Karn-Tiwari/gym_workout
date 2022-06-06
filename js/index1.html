@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <ul>
+        <li>
+            list 1
+        </li>
+        <li id="first">
+            list 2
+        </li>
+        <li class="cl">
+            list 3
+        </li>
+    </ul> -->
+<!-- 
+    <h2>heading 1</h2>
+    <div id="div1">
+        <p id="intro">paragraph 1</p>
+        <h2>heading 2</h2>
+        <p>paragraph 2</p>
+        <h2 id="intro">heading 3</h2>
+        <p>paragraph 3</p>
+    </div> -->
+    <!-- <ul id="menu">
+        <li>Home</li>
+        <li>Product</li>
+        <li>About</li>
+    </ul> -->
+    <!--beforebegin-->
+    <div id="menu"><!--selected-->
+        <!--afterbegin-->
+        <li>Home</li>
+        <li>Product</li>
+        <li>About</li>
+        <!--beforeend-->
+    </div>
+    <!--afterend-->
+
+    <script>
+        //let elm = document.getElementById("first");
+        //let elm = document.getElementByClass("cl");
+        // let elm = document.quaryselector("p.intro") this is for single selection adding all then we select more than one 
+        // let div1 = document.getElementById("div1");
+        // let elm = div1.getElementsByTagName("h2");
+        // for (let i = 0; i < elm.length; i++) {
+        //     elm[i].innerHTML = "Hello karn"
+        // }
+        // let elm = document.getElementById("intro");
+        // let h1 = document.createElement("h1");
+        // let text = document.createNode("This is h1 tag");
+        // h1.appendChild(text);
+        // elm.appendChild(h1);
+        // let lis1 = document.getElementById("list");//parent
+        // let list1 = document.createElement("li");
+        // item.textConten = "new list 5";
+        // let pos = list1.firstElementChild;
+        // list1.insertBefore(item,pos);
+        // let parent = document.getElementById("menu");
+        // let elm = parent.firstElementChild.nextElementSiblings;
+        // console.log(elm);
+        // parent.removeChild(elm); 
+
+        // Clone element => copying element is known as clone element
+        let elm = document.getElementById("menu");
+        let html = "<h1>New h1</h1>";
+        elm.insertAdjacentHTML('beforebegin',html);
+        elm.insertAdjacentHTML('afterbegin',html);
+        elm.insertAdjacentHTML('beforeend',html);
+        elm.insertAdjacentHTML('afterend',html);
+
+    </script>
+</body>
+
+</html>
